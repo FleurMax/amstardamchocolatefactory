@@ -1,9 +1,19 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const navLinks = [
+    { name: 'The Story', path: '/story' },
+    { name: 'Our Chocolates', path: '/chocolates' },
+    { name: 'Visit the Factory', path: '/visit' },
+    { name: 'Gift Boxes', path: '/gifts' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'Contact', path: '/contact' }
+  ]
 
   return (
     <motion.header 
@@ -27,26 +37,26 @@ const Header = () => {
         boxShadow: 'var(--shadow-ornate, 0 4px 15px rgba(0,0,0,0.5))'
       }}
     >
-      <div className="logo" style={{ display: 'flex', alignItems: 'center' }}>
+      <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
         <img src="/logo_straight.svg" alt="Amsterdam Chocolate Factory" style={{ height: '60px', width: 'auto', filter: 'brightness(1.5)' }} />
-      </div>
+      </Link>
 
       {/* Desktop Nav */}
       <nav className="desktop-nav" style={{ display: 'none' }}>
-        <ul style={{ display: 'flex', listStyle: 'none', gap: '2.5rem', alignItems: 'center' }}>
-          {['The Story', 'Our Chocolates', 'Visit the Factory', 'Gift Boxes', 'Contact'].map((item) => (
-            <li key={item}>
-              <a href="#" style={{ 
+        <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', alignItems: 'center' }}>
+          {navLinks.map((item) => (
+            <li key={item.name}>
+              <Link to={item.path} style={{ 
                 color: '#f5e6d3', 
                 textDecoration: 'none', 
-                fontSize: '0.9rem', 
+                fontSize: '0.8rem', 
                 fontWeight: '400', 
                 letterSpacing: '1.5px',
                 textTransform: 'uppercase',
                 transition: 'all 0.3s'
               }}>
-                {item}
-              </a>
+                {item.name}
+              </Link>
             </li>
           ))}
           <li>
@@ -66,7 +76,7 @@ const Header = () => {
       </button>
 
       <style>{`
-        @media (min-width: 1024px) {
+        @media (min-width: 1200px) {
           .desktop-nav { display: block !important; }
           button { display: none !important; }
         }
@@ -95,16 +105,16 @@ const Header = () => {
               padding: '2rem'
             }}
           >
-            <ul style={{ listStyle: 'none', textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '3rem' }}>
-              {['The Story', 'Our Chocolates', 'Visit the Factory', 'Gift Boxes', 'Contact'].map((item) => (
-                <li key={item}>
-                  <a 
-                    href="#" 
+            <ul style={{ listStyle: 'none', textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
+              {navLinks.map((item) => (
+                <li key={item.name}>
+                  <Link 
+                    to={item.path} 
                     onClick={() => setIsOpen(false)}
-                    style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '1.8rem', textTransform: 'uppercase', letterSpacing: '3px', fontFamily: 'Playfair Display' }}
+                    style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '1.5rem', textTransform: 'uppercase', letterSpacing: '3px', fontFamily: 'Playfair Display' }}
                   >
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
               <li style={{ marginTop: '2rem' }}>

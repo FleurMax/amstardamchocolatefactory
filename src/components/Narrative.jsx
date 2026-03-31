@@ -12,7 +12,7 @@ const Narrative = () => {
       alignItems: 'center',
       justifyContent: 'center',
       overflow: 'hidden',
-      padding: '70px 0'
+      padding: 'clamp(50px, 8vw, 100px) 0'
     }}>
       <motion.div
         style={{

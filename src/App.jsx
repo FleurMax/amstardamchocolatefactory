@@ -1,26 +1,34 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Story from './pages/Story'
+import Chocolates from './pages/Chocolates'
+import Visit from './pages/Visit'
+import Gifts from './pages/Gifts'
+import Contact from './pages/Contact'
+import Blog from './pages/Blog'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import ExperienceTrio from './components/ExperienceTrio'
-import Narrative from './components/Narrative'
-import Gallery from './components/Gallery'
-import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
-import { motion } from 'framer-motion'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <ExperienceTrio />
-        <Narrative />
-        <Gallery />
-        <Newsletter />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/chocolates" element={<Chocolates />} />
+          <Route path="/visit" element={<Visit />} />
+          <Route path="/gifts" element={<Gifts />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 

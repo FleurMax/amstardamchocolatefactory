@@ -63,7 +63,7 @@ const ExperienceTrio = () => {
       style={{
         paddingTop: 'clamp(100px, 15vw, 220px)',
         paddingBottom: 'clamp(50px, 8vw, 100px)',
-        backgroundColor: '#f9f7f5',
+        backgroundColor: '#ffffff',
         position: 'relative',
         zIndex: 10,
         overflow: 'visible',
@@ -82,7 +82,6 @@ const ExperienceTrio = () => {
           left: '50%',
           transform: 'translateX(-50%)',
           width: '100%',
-          maxWidth: '1920px',
           height: 'auto',
           minHeight: '200px',
           objectFit: 'cover',

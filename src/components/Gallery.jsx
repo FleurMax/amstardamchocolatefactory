@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Gallery = () => {
   return (
-    <section id="gallery" style={{ padding: '80px 0', backgroundColor: '#1a0f08' }}>
+    <section id="gallery" style={{ padding: 'clamp(60px, 10vw, 80px) 0', backgroundColor: '#1a0f08' }}>
       <div className="container" style={{ 
         display: 'grid', 
         gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
