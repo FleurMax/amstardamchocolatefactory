@@ -7,6 +7,7 @@ import Visit from './pages/Visit'
 import Gifts from './pages/Gifts'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -25,6 +26,7 @@ function App() {
           <Route path="/gifts" element={<Gifts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
         <Footer />
       </div>

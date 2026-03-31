@@ -10,7 +10,7 @@ const blogArticles = [
     category: "Origins",
     date: "Mars 15, 1884",
     excerpt: "Hidden in the Venezuelan mist is a cacao bean so rare it was once used as currency for the gods themselves...",
-    image: "/store1.jpg"
+    image: "/blog-bean.png"
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const blogArticles = [
     category: "Craft",
     date: "April 2, 1884",
     excerpt: "Why do we persist with heavy copper and brass gears when modern machines are faster? The answer lies in the heat...",
-    image: "/factory_narrative.png"
+    image: "/blog-vat.png"
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const blogArticles = [
     category: "Heritage",
     date: "April 18, 1884",
     excerpt: "The waters of the Prinsengracht do more than carry boats; they cool our basement tempering rooms naturally...",
-    image: "/store2.jpg"
+    image: "/blog-canal.png"
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const blogArticles = [
     category: "Gifting",
     date: "October 30, 1883",
     excerpt: "Preparing for the festive holiday rush involves more than wrapping; it involves an orchestra of clockwork packaging...",
-    image: "/store3.jpg"
+    image: "/blog-gift.png"
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const blogArticles = [
     category: "Science",
     date: "January 12, 1884",
     excerpt: "Liquid gold is what we call our signature 72% dark blend. Tempering it to a snap requires nerves of iron...",
-    image: "/pralines.png"
+    image: "/blog-craft.png"
   }
 ]
 
@@ -61,7 +61,7 @@ const Blog = () => {
             transition={{ duration: 0.8 }}
             style={{ textAlign: 'center', marginBottom: '4rem' }}
           >
-            <h1 className="text-gradient" style={{ fontSize: '4rem', marginBottom: '1rem' }}>The Factory Journal</h1>
+            <h1 className="text-gradient" style={{ fontSize: '4rem', marginBottom: '1rem' }}>The Factory Blog</h1>
             <p style={{ opacity: 0.7, maxWidth: '600px', margin: '0 auto', fontSize: '1.2rem' }}>
               Tales of clockwork, cocoa, and chocolate magic from the heart of Amsterdam.
             </p>
