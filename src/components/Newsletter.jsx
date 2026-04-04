@@ -5,16 +5,28 @@ const Newsletter = () => {
   const [email, setEmail] = useState('')
   const [subscribed, setSubscribed] = useState(false)
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault()
-    if (email) {
+    if (!email) return;
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "newsletter",
+          "email": email
+        }).toString(),
+      })
       setSubscribed(true)
       setEmail('')
+    } catch (error) {
+      console.error("The Archive carrier pigeon was interrupted:", error)
     }
   }
 
   return (
-    <section style={{ 
+    <section id="newsletter" style={{ 
       padding: '60px 0', 
       backgroundColor: '#1a0f08', 
       borderTop: '1px solid rgba(212, 175, 55, 0.1)',
@@ -38,9 +50,13 @@ const Newsletter = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}
+                  data-netlify="true"
+                  name="newsletter"
                 >
+                  <input type="hidden" name="form-name" value="newsletter" />
                   <input 
                     type="email" 
+                    name="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}

@@ -16,16 +16,16 @@ const ExperienceTrio = () => {
 
           const remainingTime = video.duration - video.currentTime;
 
-          // Start slowing down when 1.5s are remaining
-          if (remainingTime < 2 && remainingTime > 0) {
-            // Linearly scale playbackRate down to 0.1 for a thick 'melted' feel
-            video.playbackRate = Math.max(0.1, remainingTime / 1.5);
+          // Start slowing down when 3.5s are remaining
+          if (remainingTime < 3.5 && remainingTime > 3) {
+            // scale playbackRate down for a thick 'melted' feel
+            video.playbackRate = Math.max(0.4, (remainingTime - 2.3) / 1.2);
           }
 
-          // Exact pause point
-          if (remainingTime <= 0.3) {
+          // Exact pause point: Ending the video 2.3s before real end
+          if (remainingTime <= 2.3) {
             video.pause();
-            video.playbackRate = 1; // Reset for potential re-triggers
+            video.playbackRate = 1; // Reset
             return;
           }
 

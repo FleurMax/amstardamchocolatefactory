@@ -2,13 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Logo_amstardam_v6.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Amsterdam Chocolate Factory | A World of Pure Imagination</title>
-    <meta name="description" content="Step into a world of pure imagination at the Amsterdam Chocolate Factory. Belgian craftsmanship meets the magic of Amsterdam with artisanal chocolates and steampunk whimsy.">
+    
+    <!-- Primary Meta Tags -->
+    <title>The Amsterdam Chocolate Factory | A World of Pure Imagination & Artisanal Craft</title>
+    <meta name="title" content="The Amsterdam Chocolate Factory | A World of Pure Imagination & Artisanal Craft" />
+    <meta name="description" content="Discover artisanal Belgian chocolates with a steampunk twist at Leidsestraat 87, Amsterdam. Experience liquid gold, handcrafted pralines, and the magic of Cornelius Pumpernickel." />
+    <meta name="keywords" content="Amsterdam Chocolate, Belgian Chocolate, Artisanal Pralines, Steampunk Factory, Gift Boxes Amsterdam, Leidsestraat 87, Cornelius Pumpernickel" />
+    <link rel="canonical" href="https://amsterdamchocolatefactory.nl/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amsterdamchocolatefactory.nl/" />
+    <meta property="og:title" content="The Amsterdam Chocolate Factory | A World of Pure Imagination & Artisanal Craft" />
+    <meta property="og:description" content="Discover artisanal Belgian chocolates with a steampunk twist at Leidsestraat 87, Amsterdam. Experience liquid gold, handcrafted pralines, and the magic of Cornelius Pumpernickel." />
+    <meta property="og:image" content="/favicon.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://amsterdamchocolatefactory.nl/" />
+    <meta property="twitter:title" content="The Amsterdam Chocolate Factory | A World of Pure Imagination & Artisanal Craft" />
+    <meta property="twitter:description" content="Discover artisanal Belgian chocolates with a steampunk twist at Leidsestraat 87, Amsterdam. Experience liquid gold, handcrafted pralines, and the magic of Cornelius Pumpernickel." />
+    <meta property="twitter:image" content="/favicon.png" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ChocolateShop",
+      "name": "The Amsterdam Chocolate Factory",
+      "image": "https://amsterdamchocolatefactory.nl/entrance-night.png",
+      "@id": "https://amsterdamchocolatefactory.nl",
+      "url": "https://amsterdamchocolatefactory.nl",
+      "telephone": "+31 (0) 20 123 4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Leidsestraat 87",
+        "addressLocality": "Amsterdam",
+        "postalCode": "1017 NX",
+        "addressCountry": "NL"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/amsterdamchocolatefactory"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- The Forms Archive: Hidden records for the Netlify Crawler -->
+    <div style="display: none;">
+      <form name="contact" data-netlify="true">
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+      <form name="newsletter" data-netlify="true">
+        <input type="email" name="email" />
+      </form>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
