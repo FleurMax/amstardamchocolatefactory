@@ -64,7 +64,7 @@ const Story = () => {
                   Born from a single golden cocoa bean found in the Venezuelan mists, our factory was founded by the legendary <strong style={{ color: 'var(--accent-gold)' }}>Cornelius Pumpernickel</strong> in 1883. An obsessive explorer and master of the sweet sciences, he dreamt of a place where chocolate engaged every sense.
                 </p>
                 <p>
-                  Cornelius moved to the Prinsengracht canal in Amsterdam, specifically choosing the location for its natural cooling properties. His massive copper tempering machines, powered by an intricate system of steam and clockwork, were designed to produce the "Liquid Gold" that would soon capture the hearts of the world.
+                  Cornelius specifically chose Leidsestraat 87 for its bustling energy and unique architecture. His massive copper tempering machines, powered by an intricate system of steam and clockwork, were designed to produce the "Liquid Gold" that would soon capture the hearts of the world.
                 </p>
                 <p>
                   Today, we maintain those original machines, their gears still chiming with the same whimsical rhythm. We don't just make chocolate; we cultivate wonder, one golden bean at a time.

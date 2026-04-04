@@ -31,14 +31,14 @@ const blogArticles = [
   },
   {
     id: 3,
-    title: "Canal-Side Magic: Why Prinsengracht?",
+    title: "Canal-Side Magic: Why Leidsestraat?",
     category: "Heritage",
     date: "April 18, 1884",
     image: "/blog-canal.png",
     content: [
-      "The waters of the Prinsengracht do more than carry boats; they cool our basement tempering rooms naturally. In the 1880s, refrigeration was a luxury of the future. Cornelius, ever the innovator, designed a series of subterranean arches that utilize the constant temperature of the canal water.",
-      "By placing our factory on the edge of the canal, we integrated the city of Amsterdam into our very recipe. The slight humidity of the water-front air helps prevent the chocolate from drying too quickly, resulting in a creamier texture.",
-      "When you visit us today, you're not just standing in a building—you're standing inside a living machine that breathes the cool air of the Amsterdam canals."
+      "The waters of the Leidsestraat do more than carry boats; they cool our basement tempering rooms naturally. In the 1880s, refrigeration was a luxury of the future. Cornelius, ever the innovator, designed a series of subterranean arches that utilize the constant temperature of the canal water.",
+      "By placing our factory in the heart of the city, specifically on Leidsestraat 87, we integrated the bustle of Amsterdam into our very recipe. The vibrant air of the shopping district helps prevent the chocolate from cooling too rapidly, resulting in a deeper, more refined snap.",
+      "When you visit us today, you're not just standing in a building—you're standing inside a living machine that breathes the history of the Leidsestraat."
     ]
   },
   {

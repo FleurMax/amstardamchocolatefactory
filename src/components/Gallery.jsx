@@ -33,7 +33,7 @@ const Gallery = () => {
           </p>
           <div style={{ padding: '20px', background: 'rgba(212, 175, 55, 0.1)', border: '1px solid var(--accent-gold)', borderRadius: '8px' }}>
             <h4 style={{ color: 'var(--accent-gold)', marginBottom: '10px' }}>Location & Hours</h4>
-            <p style={{ fontSize: '0.9rem' }}>Prinsengracht 123, Amsterdam</p>
+            <p style={{ fontSize: '0.9rem' }}>Leidsestraat 87, Amsterdam</p>
             <p style={{ fontSize: '0.9rem' }}>Open daily: 10:00 - 19:00</p>
           </div>
         </motion.div>

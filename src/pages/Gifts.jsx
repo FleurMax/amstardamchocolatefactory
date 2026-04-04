@@ -6,7 +6,7 @@ const Gifts = () => {
   const giftProducts = [
     { name: "The Golden Ticket Box", text: "A curated collection of our 12 most magical artisan pralines in a velvet-lined brass case.", price: "€45.00" },
     { name: "Copper Gear Collection", text: "8 milk chocolate gears with salted caramel and brass-colored cocoa dust.", price: "€28.00" },
-    { name: "The Amsterdam Fairytale", text: "A massive chocolate-covered storytelling book with 4 dark bars and a map of the Prinsengracht.", price: "€55.00" },
+    { name: "The Amsterdam Fairytale", text: "A massive chocolate-covered storytelling book with 4 dark bars and a map of the Leidsestraat.", price: "€55.00" },
   ]
 
   return (

@@ -55,7 +55,7 @@ const Visit = () => {
                     <MapPin style={{ color: 'var(--accent-gold)', flexShrink: 0 }} size={28} />
                     <div>
                        <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>Location</h4>
-                       <p style={{ opacity: 0.7 }}>Prinsengracht 123, 1016 GR Amsterdam, Netherlands</p>
+                       <p style={{ opacity: 0.7 }}>Leidsestraat 87, 1017 NX Amsterdam, Netherlands</p>
                     </div>
                   </div>
 
@@ -83,7 +83,7 @@ const Visit = () => {
 
               <div style={{ padding: '2rem', borderLeft: '4px solid var(--accent-gold)', background: 'rgba(212, 175, 55, 0.02)' }}>
                 <p style={{ fontStyle: 'italic', opacity: 0.8, lineHeight: '1.6' }}>
-                  "The scent of roasting cocoa is our north star. Follow it to the Prinsengracht, where the gears of the city meet the heart of the bean."
+                  "The scent of roasting cocoa is our north star. Follow it to the Leidsestraat, where the pulse of the city meets the heart of the bean."
                 </p>
               </div>
             </motion.div>

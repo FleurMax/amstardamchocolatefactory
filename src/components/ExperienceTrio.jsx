@@ -17,7 +17,7 @@ const ExperienceTrio = () => {
           const remainingTime = video.duration - video.currentTime;
 
           // Start slowing down when 1.5s are remaining
-          if (remainingTime < 1 && remainingTime > 0.3) {
+          if (remainingTime < 2 && remainingTime > 0) {
             // Linearly scale playbackRate down to 0.1 for a thick 'melted' feel
             video.playbackRate = Math.max(0.1, remainingTime / 1.5);
           }

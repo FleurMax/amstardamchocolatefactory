@@ -22,10 +22,10 @@ const blogArticles = [
   },
   {
     id: 3,
-    title: "Canal-Side Magic: Why Prinsengracht?",
+    title: "Canal-Side Magic: Why Leidsestraat?",
     category: "Heritage",
     date: "April 18, 1884",
-    excerpt: "The waters of the Prinsengracht do more than carry boats; they cool our basement tempering rooms naturally...",
+    excerpt: "The heritage of the Leidsestraat do more than carry shoppers; they cool our basement tempering rooms naturally...",
     image: "/blog-canal.png"
   },
   {

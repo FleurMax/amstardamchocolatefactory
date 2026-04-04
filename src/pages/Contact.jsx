@@ -85,7 +85,7 @@ const Contact = () => {
             <div style={{ padding: '2rem', border: '1px solid rgba(212, 175, 55, 0.2)', borderRadius: '12px' }}>
               <MapPin style={{ color: 'var(--accent-gold)', marginBottom: '1.5rem' }} size={36} />
               <h4 style={{ color: 'white', fontSize: '1.4rem', marginBottom: '0.5rem' }}>The Shop</h4>
-              <p style={{ opacity: 0.7, color: 'var(--cream)' }}>Prinsengracht 123, Amsterdam</p>
+              <p style={{ opacity: 0.7, color: 'var(--cream)' }}>Leidsestraat 87, Amsterdam</p>
             </div>
             <div style={{ padding: '2rem', border: '1px solid rgba(212, 175, 55, 0.2)', borderRadius: '12px' }}>
               <Phone style={{ color: 'var(--accent-gold)', marginBottom: '1.5rem' }} size={36} />

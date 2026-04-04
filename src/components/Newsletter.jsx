@@ -1,7 +1,18 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const Newsletter = () => {
+  const [email, setEmail] = useState('')
+  const [subscribed, setSubscribed] = useState(false)
+
+  const handleSubscribe = (e) => {
+    e.preventDefault()
+    if (email) {
+      setSubscribed(true)
+      setEmail('')
+    }
+  }
+
   return (
     <section style={{ 
       padding: '60px 0', 
@@ -18,24 +29,54 @@ const Newsletter = () => {
             <p style={{ opacity: 0.8, marginBottom: '2rem', fontSize: '1.1rem' }}>
               Sign up for exclusive news, secret tasting invites, and your chance to <strong>Win a Golden Gift Box</strong> every month!
             </p>
-            <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-              <input 
-                type="email" 
-                placeholder="Enter your email address..." 
-                style={{
-                  background: 'rgba(255,255,255,0.05)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  padding: '15px 25px',
-                  borderRadius: '50px',
-                  color: 'white',
-                  flex: 1,
-                  fontSize: '1rem',
-                  outline: 'none',
-                  minWidth: '250px'
-                }}
-              />
-              <button className="btn-primary">Subscribe to the Magic</button>
-            </div>
+            
+            <AnimatePresence>
+              {!subscribed ? (
+                <motion.form 
+                  onSubmit={handleSubscribe} 
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}
+                >
+                  <input 
+                    type="email" 
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email address..." 
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      padding: '15px 25px',
+                      borderRadius: '50px',
+                      color: 'white',
+                      flex: 1,
+                      fontSize: '1rem',
+                      outline: 'none',
+                      minWidth: '250px'
+                    }}
+                  />
+                  <button type="submit" className="btn-primary">Subscribe to the Magic</button>
+                </motion.form>
+              ) : (
+                <motion.div 
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  style={{ 
+                    padding: '15px 30px', 
+                    background: 'rgba(212, 175, 55, 0.1)', 
+                    border: '2px solid #d4af37', 
+                    borderRadius: '12px',
+                    textAlign: 'center',
+                    color: '#f5e6d3'
+                  }}
+                >
+                  <h4 style={{ fontSize: '1.4rem', color: '#d4af37', marginBottom: '8px' }}>Welcome to the Club!</h4>
+                  <p>Your golden ticket to the latest news will arrive shortly via carrier pigeon.</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
           
           <div className="ticket-visual" style={{ perspective: '1000px', display: 'flex', justifyContent: 'center' }}>
