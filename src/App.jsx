@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import Story from './pages/Story'
 import Chocolates from './pages/Chocolates'
 import Visit from './pages/Visit'
-import Gifts from './pages/Gifts'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
@@ -23,7 +22,6 @@ function App() {
           <Route path="/story" element={<Story />} />
           <Route path="/chocolates" element={<Chocolates />} />
           <Route path="/visit" element={<Visit />} />
-          <Route path="/gifts" element={<Gifts />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />

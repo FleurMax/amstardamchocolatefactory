@@ -24,7 +24,6 @@ const Footer = () => {
               <Link to="/story" style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>The Story</Link>
               <Link to="/chocolates" style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Our Chocolates</Link>
               <Link to="/visit" style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Visit Us</Link>
-              <Link to="/gifts" style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Gift Boxes</Link>
               <Link to="/blog" style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Blog</Link>
               <Link to="/contact" style={{ color: '#f5e6d3', textDecoration: 'none', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px' }}>Contact</Link>
             </div>

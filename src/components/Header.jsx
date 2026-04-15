@@ -10,7 +10,6 @@ const Header = () => {
     { name: 'The Story', path: '/story' },
     { name: 'Our Chocolates', path: '/chocolates' },
     { name: 'Visit the Factory', path: '/visit' },
-    { name: 'Gift Boxes', path: '/gifts' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' }
   ]
